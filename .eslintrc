@@ -1,0 +1,50 @@
+{
+    "rules": {
+        "indent": [
+            2,
+            4
+        ],
+        "linebreak-style": [
+            2,
+            "unix"
+        ],
+        "semi": [
+            2,
+            "always"
+        ],
+        "quotes": 0,
+        "no-trailing-spaces": [2, { "skipBlankLines": true }]
+    },
+    "env": {
+        "browser": true,
+        "es6": true
+    },
+    "ecmaFeatures": {
+        "modules": true
+    },
+    "globals": {
+        "$_": true,
+        "_": true,
+        "afterEach": true,
+        "BUILD_FOLDER": true,
+        "angular": true,
+        "beforeEach": true,
+        "config": true,
+        "define": true,
+        "describe": true,
+        "document": true,
+        "expect": true,
+        "gulp": true,
+        "inject": true,
+        "it": true,
+        "jasmine": true,
+        "release": true,
+        "RELEASE_FOLDER": true,
+        "SRC_FOLDER": true,
+        "TEMPLATE_FOLDER": true,
+        "require": true,
+        "sinon": true,
+        "spyOn": true,
+        "module": true
+    }
+}
