@@ -1,11 +1,11 @@
-let webpack = require('webpack');
-let HtmlWebpackPlugin = require('html-webpack-plugin');
-let ExtractTextPlugin = require('extract-text-webpack-plugin');
+var webpack = require('webpack');
+var HtmlWebpackPlugin = require('html-webpack-plugin');
+var ExtractTextPlugin = require('extract-text-webpack-plugin');
 
 module.exports = {
     entry: {
-        'vendor': './src/vendors.ts',
-        'app': './src/app.ts'
+        'vendor': './src/vendors',
+        'app': './src/app'
     },
     resolve: {
         extensions: ['', '.js', '.ts']
@@ -18,7 +18,8 @@ module.exports = {
         loaders: [
             {
                 test: /\.ts$/,
-                loaders: ['ts', 'angular2-template-loader']
+                loaders: ['ts', 'angular2-template-loader'],
+                exclude: /node_modules|bower_components/
             },
             {
                 test: /\.css$/,
